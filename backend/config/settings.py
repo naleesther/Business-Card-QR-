@@ -129,7 +129,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+"https://qr-business-card-3eib.vercel.app"
+]
 
 from datetime import timedelta
 
@@ -153,3 +155,7 @@ DARAJA = {
     "PASSKEY": "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ad1ed2f919",
     "CALLBACK_URL": "https://intervarietal-loungy-luanna.ngrok-free.dev",
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://qr-business-card-3eib.vercel.app"
+]
